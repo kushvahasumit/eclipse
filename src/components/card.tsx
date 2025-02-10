@@ -6,7 +6,7 @@ export default function JobCard({ job }: { job: { id: number; title: string; loc
             <h2 className="text-lg font-bold">{job.title}</h2>
             <p className="text-gray-600">{job.location}</p>
             <p className="text-green-600 font-semibold">{job.salary}</p>
-            <Link href={`/jobs/${job.id}`} className="text-blue-500 mt-2 block">View Details</Link>
+            <Link href={`/jobs/`} className="text-blue-500 mt-2 block">View Details</Link>
         </div>
     );
 }

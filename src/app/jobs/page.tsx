@@ -1,6 +1,6 @@
+"use client"
 import React from "react";
-import { Briefcase, Star, MapPin, Clock, Globe, Bookmark } from "lucide-react";
-import JobCard from "../../components/card";
+import {  Star, MapPin, Bookmark } from "lucide-react";
 import img1 from "../../../public/image2.png"
 import img2 from "../../../public/image3.png"
 import img3 from "../../../public/image4.png"
@@ -106,7 +106,7 @@ const JobCards = () => {
                 {jobs.map((job) => (
                     <div
                         key={job.id}
-                        className={`p-6 border m-3 rounded-2xl shadow-lg flex flex-col gap-4 ${job.color} bg-white`}
+                        className={`p-6 border m-3 rounded-2xl shadow-lg flex flex-col gap-4 ${job.color}`}
                     >
                         <div className="flex items-center justify-between">
                             <Image src={job.img} alt="company logo" className="w-8 h-8" />

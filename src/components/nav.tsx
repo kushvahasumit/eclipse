@@ -1,8 +1,9 @@
 "use Client"
-import { Bell, Settings, MapPin, Search, Play, Receipt, BriefcaseBusiness } from "lucide-react";
+import { Bell, MapPin, Search, Play, Receipt, BriefcaseBusiness } from "lucide-react";
 import DarkModeToggle from "./mode";
 import profile from "../../public/image1.png"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -10,11 +11,11 @@ export default function Navbar() {
             <div className="flex justify-between items-center px-6 py-2">
                 <h1 className="text-2xl px-8 font-bold">Eclipse</h1>
                 <div className="flex items-center space-x-6">
-                    <a href="/" className="border-b border-white dark:text-gray-300">Find Job</a>
-                    <a href="/jobs" className="dark:text-gray-300">Messages</a>
-                    <a href="/jobs" className="dark:text-gray-300">Hiring</a>
-                    <a href="/jobs" className="dark:text-gray-300">Community</a>
-                    <a href="/jobs" className="dark:text-gray-300">FAQ</a>
+                    <Link href="/" className="border-b border-white dark:text-gray-300">Find Job</Link>
+                    <Link href="/jobs" className="dark:text-gray-300">Messages</Link>
+                    <Link href="/jobs" className="dark:text-gray-300">Hiring</Link>
+                    <Link href="/jobs" className="dark:text-gray-300">Community</Link>
+                    <Link href="/jobs" className="dark:text-gray-300">FAQ</Link>
                 </div>
 
                 <div className="flex items-center space-x-6">
